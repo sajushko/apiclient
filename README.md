@@ -170,6 +170,7 @@ V prípade že potrebujete detailnejšie informácie k faktúram, stačí násle
   * *getInvoiceDetails($ids = '')*
   * *getUserCompaniesData($getAllCompanies = false)*
   * *createRegularFromProforma($proforma_id)*
+  * *createProformaFromOrder($order_id)*
   * *setEstimateStatus($estimate_id, $status)*
   * *getBankAccounts()*
   * *addBankAccount(array $data)*
@@ -1479,6 +1480,16 @@ Vráti detail klienta.
 $api->client(123);
 ```
 
+### 54. createProformaFromOrder($order_id)
+vystaví zálohovú faktúru z objednávky
+
+##### Parametre 
+* **$order_id** *int* povinné. Id objednávky
+
+Príklad použitia:
+```php
+$api->createProformaFrom(123);
+  ```
 
 
 ### Autorizácia
